@@ -10,60 +10,51 @@
 namespace Factory_Iraq {
     
     
-    public partial class SiteMaster {
+    public partial class InventoryByMaterialCat {
         
         /// <summary>
-        /// logged control.
+        /// cmbMaterialCat control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl logged;
+        protected global::System.Web.UI.WebControls.DropDownList cmbMaterialCat;
         
         /// <summary>
-        /// btnLogOut control.
+        /// upTotal control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnLogOut;
+        protected global::System.Web.UI.UpdatePanel upTotal;
         
         /// <summary>
-        /// userSpan control.
+        /// lblTotal control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl userSpan;
+        protected global::System.Web.UI.WebControls.Label lblTotal;
         
         /// <summary>
-        /// NotLogged control.
+        /// UpRepeater control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl NotLogged;
+        protected global::System.Web.UI.UpdatePanel UpRepeater;
         
         /// <summary>
-        /// btnLogin control.
+        /// Repeater1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnLogin;
-        
-        /// <summary>
-        /// MainContent control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder MainContent;
+        protected global::System.Web.UI.WebControls.Repeater Repeater1;
     }
 }

@@ -1,8 +1,8 @@
-﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="Factory_Iraq.SiteMaster" %>
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="Factory_Iraq.SiteMaster"  %>
 
 <!DOCTYPE html>
 
-<html lang="en">
+<html lang="en" dir="rtl">
 <head runat="server">
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -15,6 +15,28 @@
     <webopt:bundlereference runat="server" path="~/Content/css" />
     <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
 
+    
+    <link href="https://s3-us-west-2.amazonaws.com/s.cdpn.io/123941/tablesaw.stackonly.css" rel="stylesheet" />
+    <style>
+        .navbar{
+            margin-top:0
+        }
+        .navbar ul li{
+            margin-left:30px;
+            margin-right:30px
+        }
+
+       .navbar .dropdown-menu a{
+           display:block;
+           margin:10px
+       }
+
+        @media(min-width:764px) {
+            button.navbar-toggler {
+                display: none
+            }
+        }
+    </style>
 </head>
 <body>
     <form runat="server">
@@ -24,7 +46,7 @@
                 <%--Framework Scripts--%>
                 <asp:ScriptReference Name="MsAjaxBundle" />
                 <asp:ScriptReference Name="jquery" />
-                <asp:ScriptReference Name="bootstrap" />
+               <asp:ScriptReference Name="bootstrap" />
                 <asp:ScriptReference Name="respond" />
                 <asp:ScriptReference Name="WebForms.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebForms.js" />
                 <asp:ScriptReference Name="WebUIValidation.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebUIValidation.js" />
@@ -37,29 +59,121 @@
                 <asp:ScriptReference Name="WebFormsBundle" />
                 <%--Site Scripts--%>
             </Scripts>
-        </asp:ScriptManager>
+        
+       
 
-        <div class="navbar navbar-inverse navbar-fixed-top">
-            <div class="container">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" runat="server" href="~/">Application name</a>
-                </div>
-                <div class="navbar-collapse collapse">
-                    <ul class="nav navbar-nav">
-                        <li><a runat="server" href="~/">Home</a></li>
-                        <li><a runat="server" href="~/About">About</a></li>
-                        <li><a runat="server" href="~/Contact">Contact</a></li>
-                    </ul>
-                </div>
-            </div>
+
+        </asp:ScriptManager>
+       
+
+             <Script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/tablesaw.stackonly.js"></Script>
+
+
+        <!-- -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light " style="background-color:#000; color:#fff" >
+  <a class="navbar-brand" href="#">LOGO</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          المواد خامة
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">جرد المخزن حسب اصناف</a>
+          <a class="dropdown-item" href="#">جرد المخزن حسب الماركات</a>
+          <a class="dropdown-item" href="#">بحث حسب المادة</a>
+            <a class="dropdown-item" href="#">جرد المخزن عام</a>
         </div>
-        <div class="container body-content">
-            <asp:ContentPlaceHolder ID="MainContent" runat="server">
+      </li>
+
+        <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          تقرير عن مصاريف
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">نوع المصرف</a>
+          <a class="dropdown-item" href="#">تقرير عام</a>
+          <a class="dropdown-item" href="#">تقرير عام حسب نوع المصرف</a>
+            
+        </div>
+      </li>
+
+         <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown3" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          الزبائن
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">ديون الزبائن</a>
+          <a class="dropdown-item" href="#">كشف الحساب</a>
+          
+            
+        </div>
+      </li>
+
+        <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown4" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          مبيعات
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">حسب المادة</a>
+          <a class="dropdown-item" href="#">حسب مجموعة</a>
+            <a class="dropdown-item" href="#">حسب المشترى</a>
+          
+            
+        </div>
+      </li>
+
+        <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown5" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          انتاج
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">مخزن عام</a>
+          <a class="dropdown-item" href="#">كشف المواد</a>
+            <a class="dropdown-item" href="#">كشف المواد المباعة</a>
+          
+            
+        </div>
+      </li>
+
+       <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown6" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          تقاير
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">تقرير اليومى</a>
+          <a class="dropdown-item" href="#">ديون جهات الشراء</a>
+            <a class="dropdown-item" href="#">ربح المواد بين تاريخين</a>
+          
+            
+        </div>
+      </li>
+
+    </ul>
+   <%-- <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>--%>
+
+                   <div id="logged" runat="server" class="form-inline my-2 my-lg-0">
+                  
+                         <asp:Button  runat="server" ID="btnLogOut" Text="تسجيل خروج" OnClick="btnLogOut_Click" CssClass  ="form-control btn btn-success btn btn-outline-success my-2 my-sm-0" Width="50%"  />
+                  <span id="userSpan" runat="server" class=" mr-sm-2" style="color:#f00;margin:10px" ></span>       
+                </div>
+                <div id="NotLogged" runat="server" >
+                    
+                    <asp:Button runat="server" ID="btnLogin" Text="تسجيل دخول" OnClick="btnLogin_Click" CssClass  ="form-control btn btn-success btn btn-outline-success my-2 my-sm-0" Width="50%"/>
+                </div>
+
+  </div>
+</nav>
+        <!-- -->
+        <div class="container body-content" style="margin-top:20px">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server" >
             </asp:ContentPlaceHolder>
             <hr />
             <footer>

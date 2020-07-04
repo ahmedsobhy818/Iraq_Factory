@@ -10,43 +10,34 @@
 namespace Factory_Iraq {
     
     
-    public partial class SiteMaster {
+    public partial class Login {
         
         /// <summary>
-        /// logged control.
+        /// cmbUsers control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl logged;
+        protected global::System.Web.UI.WebControls.DropDownList cmbUsers;
         
         /// <summary>
-        /// btnLogOut control.
+        /// txtPass control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnLogOut;
+        protected global::System.Web.UI.WebControls.TextBox txtPass;
         
         /// <summary>
-        /// userSpan control.
+        /// lblError control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl userSpan;
-        
-        /// <summary>
-        /// NotLogged control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl NotLogged;
+        protected global::System.Web.UI.WebControls.Label lblError;
         
         /// <summary>
         /// btnLogin control.
@@ -56,14 +47,5 @@ namespace Factory_Iraq {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button btnLogin;
-        
-        /// <summary>
-        /// MainContent control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder MainContent;
     }
 }

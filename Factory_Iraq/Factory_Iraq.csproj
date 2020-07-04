@@ -128,13 +128,19 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="About.aspx" />
+    <Content Include="AccountStatement.aspx" />
+    <Content Include="BuyingDept.aspx" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Site.css" />
+    <Content Include="CustomerDebit.aspx" />
+    <Content Include="DailyReport.aspx" />
     <Content Include="Default.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="FrmTest.aspx" />
+    <Content Include="GeneralStore.aspx" />
     <Content Include="Global.asax" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
@@ -142,7 +148,19 @@
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="main.aspx" />
+    <Content Include="welcome.aspx" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="InventoryByMaterialCat.aspx" />
+    <Content Include="InventoryByMaterialMark.aspx" />
+    <Content Include="InventoryGeneral.aspx" />
+    <Content Include="Login.aspx" />
+    <Content Include="MaterialsGain2Dates.aspx" />
+    <Content Include="ProductionMaterials.aspx" />
+    <Content Include="ProductionMaterialsSold.aspx" />
+    <Content Include="SalesByBuyer.aspx" />
+    <Content Include="SalesByGroup.aspx" />
+    <Content Include="SalesByMaterial.aspx" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
@@ -171,13 +189,22 @@
     <Content Include="Scripts\WebForms\WebForms.js" />
     <Content Include="Scripts\WebForms\WebParts.js" />
     <Content Include="Scripts\WebForms\WebUIValidation.js" />
+    <Content Include="SearchByMaterial.aspx" />
     <Content Include="Site.Master" />
+    <Content Include="Spendings.aspx" />
     <Content Include="ViewSwitcher.ascx" />
     <Content Include="Web.config" />
     <Content Include="Bundle.config" />
     <Content Include="Site.Mobile.Master" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AccountStatement.aspx.cs">
+      <DependentUpon>AccountStatement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AccountStatement.aspx.designer.cs">
+      <DependentUpon>AccountStatement.aspx</DependentUpon>
+    </Compile>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="About.aspx.cs">
       <DependentUpon>About.aspx</DependentUpon>
@@ -187,12 +214,33 @@
       <DependentUpon>About.aspx</DependentUpon>
     </Compile>
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="BuyingDept.aspx.cs">
+      <DependentUpon>BuyingDept.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BuyingDept.aspx.designer.cs">
+      <DependentUpon>BuyingDept.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Contact.aspx.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Contact.aspx.designer.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerDebit.aspx.cs">
+      <DependentUpon>CustomerDebit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CustomerDebit.aspx.designer.cs">
+      <DependentUpon>CustomerDebit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DailyReport.aspx.cs">
+      <DependentUpon>DailyReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DailyReport.aspx.designer.cs">
+      <DependentUpon>DailyReport.aspx</DependentUpon>
     </Compile>
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
@@ -201,10 +249,108 @@
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
+    <Compile Include="FrmTest.aspx.cs">
+      <DependentUpon>FrmTest.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrmTest.aspx.designer.cs">
+      <DependentUpon>FrmTest.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GeneralStore.aspx.cs">
+      <DependentUpon>GeneralStore.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GeneralStore.aspx.designer.cs">
+      <DependentUpon>GeneralStore.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="InventoryByMaterialCat.aspx.cs">
+      <DependentUpon>InventoryByMaterialCat.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="InventoryByMaterialCat.aspx.designer.cs">
+      <DependentUpon>InventoryByMaterialCat.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="InventoryByMaterialMark.aspx.cs">
+      <DependentUpon>InventoryByMaterialMark.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="InventoryByMaterialMark.aspx.designer.cs">
+      <DependentUpon>InventoryByMaterialMark.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="InventoryGeneral.aspx.cs">
+      <DependentUpon>InventoryGeneral.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="InventoryGeneral.aspx.designer.cs">
+      <DependentUpon>InventoryGeneral.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="main.aspx.cs">
+      <DependentUpon>main.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="main.aspx.designer.cs">
+      <DependentUpon>main.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MaterialsGain2Dates.aspx.cs">
+      <DependentUpon>MaterialsGain2Dates.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MaterialsGain2Dates.aspx.designer.cs">
+      <DependentUpon>MaterialsGain2Dates.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ProductionMaterials.aspx.cs">
+      <DependentUpon>ProductionMaterials.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ProductionMaterials.aspx.designer.cs">
+      <DependentUpon>ProductionMaterials.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ProductionMaterialsSold.aspx.cs">
+      <DependentUpon>ProductionMaterialsSold.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ProductionMaterialsSold.aspx.designer.cs">
+      <DependentUpon>ProductionMaterialsSold.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SalesByBuyer.aspx.cs">
+      <DependentUpon>SalesByBuyer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SalesByBuyer.aspx.designer.cs">
+      <DependentUpon>SalesByBuyer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SalesByGroup.aspx.cs">
+      <DependentUpon>SalesByGroup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SalesByGroup.aspx.designer.cs">
+      <DependentUpon>SalesByGroup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SalesByMaterial.aspx.cs">
+      <DependentUpon>SalesByMaterial.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SalesByMaterial.aspx.designer.cs">
+      <DependentUpon>SalesByMaterial.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SearchByMaterial.aspx.cs">
+      <DependentUpon>SearchByMaterial.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SearchByMaterial.aspx.designer.cs">
+      <DependentUpon>SearchByMaterial.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Site.Master.cs">
       <DependentUpon>Site.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -214,15 +360,31 @@
     </Compile>
     <Compile Include="Site.Mobile.Master.cs">
       <DependentUpon>Site.Mobile.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Site.Mobile.Master.designer.cs">
       <DependentUpon>Site.Mobile.Master</DependentUpon>
     </Compile>
+    <Compile Include="Spendings.aspx.cs">
+      <DependentUpon>Spendings.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Spendings.aspx.designer.cs">
+      <DependentUpon>Spendings.aspx</DependentUpon>
+    </Compile>
     <Compile Include="ViewSwitcher.ascx.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="ViewSwitcher.ascx.designer.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="welcome.aspx.cs">
+      <DependentUpon>welcome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="welcome.aspx.designer.cs">
+      <DependentUpon>welcome.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
