@@ -21,14 +21,17 @@
         .navbar{
             margin-top:0
         }
+        .navbar ul{
+            margin-top:15px
+        }
         .navbar ul li{
-            margin-left:30px;
-            margin-right:30px
+            margin-left:20px;
+            margin-right:20px
         }
 
        .navbar .dropdown-menu a{
            display:block;
-           margin:10px
+           margin:5px
        }
 
         @media(min-width:764px) {
@@ -83,10 +86,10 @@
           المواد خامة
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#">جرد المخزن حسب اصناف</a>
-          <a class="dropdown-item" href="#">جرد المخزن حسب الماركات</a>
-          <a class="dropdown-item" href="#">بحث حسب المادة</a>
-            <a class="dropdown-item" href="#">جرد المخزن عام</a>
+          <a class="dropdown-item" href="InventoryByMaterialCat.aspx">جرد المخزن حسب اصناف</a>
+          <a class="dropdown-item" href="InventoryByMaterialMark.aspx">جرد المخزن حسب الماركات</a>
+          <a class="dropdown-item" href="SearchByMaterial.aspx">بحث حسب المادة</a>
+            <a class="dropdown-item" href="InventoryGeneral.aspx">جرد المخزن عام</a>
         </div>
       </li>
 
@@ -95,9 +98,9 @@
           تقرير عن مصاريف
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#">نوع المصرف</a>
-          <a class="dropdown-item" href="#">تقرير عام</a>
-          <a class="dropdown-item" href="#">تقرير عام حسب نوع المصرف</a>
+          <a class="dropdown-item" href="Spendings.aspx">نوع المصرف</a>
+          <a class="dropdown-item" href="Spendings.aspx">تقرير عام</a>
+          <a class="dropdown-item" href="Spendings.aspx">تقرير عام حسب نوع المصرف</a>
             
         </div>
       </li>
@@ -107,8 +110,8 @@
           الزبائن
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#">ديون الزبائن</a>
-          <a class="dropdown-item" href="#">كشف الحساب</a>
+          <a class="dropdown-item" href="CustomerDebit.aspx">ديون الزبائن</a>
+          <a class="dropdown-item" href="AccountStatement.aspx">كشف الحساب</a>
           
             
         </div>
@@ -119,9 +122,9 @@
           مبيعات
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#">حسب المادة</a>
-          <a class="dropdown-item" href="#">حسب مجموعة</a>
-            <a class="dropdown-item" href="#">حسب المشترى</a>
+          <a class="dropdown-item" href="SalesByMaterial.aspx">حسب المادة</a>
+          <a class="dropdown-item" href="SalesByGroup.aspx">حسب مجموعة</a>
+            <a class="dropdown-item" href="SalesByBuyer.aspx">حسب المشترى</a>
           
             
         </div>
@@ -132,9 +135,9 @@
           انتاج
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#">مخزن عام</a>
-          <a class="dropdown-item" href="#">كشف المواد</a>
-            <a class="dropdown-item" href="#">كشف المواد المباعة</a>
+          <a class="dropdown-item" href="GeneralStore.aspx">مخزن عام</a>
+          <a class="dropdown-item" href="ProductionMaterials.aspx">كشف المواد</a>
+            <a class="dropdown-item" href="ProductionMaterialsSold.aspx">كشف المواد المباعة</a>
           
             
         </div>
@@ -145,9 +148,9 @@
           تقاير
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#">تقرير اليومى</a>
-          <a class="dropdown-item" href="#">ديون جهات الشراء</a>
-            <a class="dropdown-item" href="#">ربح المواد بين تاريخين</a>
+          <a class="dropdown-item" href="DailyReport.aspx">تقرير اليومى</a>
+          <a class="dropdown-item" href="BuyingDept.aspx">ديون جهات الشراء</a>
+            <a class="dropdown-item" href="MaterialsGain2Dates.aspx">ربح المواد بين تاريخين</a>
           
             
         </div>
@@ -159,14 +162,14 @@
       <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
     </form>--%>
 
-                   <div id="logged" runat="server" class="form-inline my-2 my-lg-0">
+                   <div id="logged" runat="server" class="form-inline my-2 my-lg-0 col-xs-3 col-md-2" style="margin-top:9px;float:right">
                   
-                         <asp:Button  runat="server" ID="btnLogOut" Text="تسجيل خروج" OnClick="btnLogOut_Click" CssClass  ="form-control btn btn-success btn btn-outline-success my-2 my-sm-0" Width="50%"  />
-                  <span id="userSpan" runat="server" class=" mr-sm-2" style="color:#f00;margin:10px" ></span>       
+                         <asp:Button  runat="server" ID="btnLogOut" Text="تسجيل خروج" OnClick="btnLogOut_Click" CssClass  ="form-control btn btn-success btn btn-outline-success my-2 my-sm-0"   />
+                  <span id="userSpan" runat="server" class=" mr-sm-2" style="color:#f00;margin:10px;float:right" ></span>       
                 </div>
-                <div id="NotLogged" runat="server" >
-                    
-                    <asp:Button runat="server" ID="btnLogin" Text="تسجيل دخول" OnClick="btnLogin_Click" CssClass  ="form-control btn btn-success btn btn-outline-success my-2 my-sm-0" Width="50%"/>
+                <div id="NotLogged" runat="server" style="margin-top:9px;float:right" class="col-xs-3 col-md-2">
+                     
+                    <asp:Button runat="server" ID="btnLogin" Text="تسجيل دخول" OnClick="btnLogin_Click" CssClass  ="form-control btn btn-success btn btn-outline-success my-2 my-sm-0"  />
                 </div>
 
   </div>
