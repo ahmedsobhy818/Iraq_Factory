@@ -12,7 +12,7 @@
             display:block;
             text-decoration:none;
             color:inherit
-        }
+        } 
     </style>
     <div class="alert alert-success col-md-4 col-xs-12" role="alert"  style="text-align:right;cursor:pointer;margin:25px"  ><a href="InventoryByMaterialCat.aspx">	جرد المخزن حسب اصناف</a></div>
     <div class="alert alert-success col-md-4 col-xs-12" role="alert"  style="text-align:right;cursor:pointer;margin:25px"  ><a href="InventoryByMaterialMark.aspx">	جرد المخزن حسب الماركات</a></div>
